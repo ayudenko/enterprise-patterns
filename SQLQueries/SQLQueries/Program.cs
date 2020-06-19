@@ -1,12 +1,25 @@
-﻿using System;
+﻿using SQLQueriesLib;
+using System;
+using System.Data.SqlClient;
+using System.Text;
 
 namespace SQLQueries
 {
-    class Program
+    sealed class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            try
+            {
+                var query = new SqlQuery("(localdb)\\MSSQLLocalDB", "SQLQueries");
+                query.GetActiveUsers();
+            }
+            catch (SqlException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            Console.WriteLine("\nDone. Press enter.");
+            Console.ReadLine();
         }
     }
 }

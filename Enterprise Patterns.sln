@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLQueries", "SQLQueries", "{FA7A717C-FC67-4CC2-9B5C-EED075C25D0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLQueries", "SQLQueries\SQLQueries\SQLQueries.csproj", "{0FC91722-BDFE-44AE-96F8-06C62B781591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLQueries", "SQLQueries\SQLQueries\SQLQueries.csproj", "{0FC91722-BDFE-44AE-96F8-06C62B781591}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libraries", "libraries", "{5512BE99-7FF7-47AA-8B43-D4CD4FDB670A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLQueriesLib", "SQLQueries\libraries\SQLQueriesLib\SQLQueriesLib.csproj", "{C8A5A97B-C4E1-464D-A8CE-F9894FA38C68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLQueriesLib", "SQLQueries\libraries\SQLQueriesLib\SQLQueriesLib.csproj", "{C8A5A97B-C4E1-464D-A8CE-F9894FA38C68}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B4D3EA0D-96C9-459B-BF02-B96F63542E47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLQueriesLib.Tests", "SQLQueries\tests\SQLQueriesLib.Tests\SQLQueriesLib.Tests.csproj", "{8F349E99-EB87-439B-8670-0C9FB37663AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQLQueriesLib.Tests", "SQLQueries\tests\SQLQueriesLib.Tests\SQLQueriesLib.Tests.csproj", "{8F349E99-EB87-439B-8670-0C9FB37663AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0FC91722-BDFE-44AE-96F8-06C62B781591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -65,11 +62,17 @@ Global
 		{8F349E99-EB87-439B-8670-0C9FB37663AA}.Release|x86.ActiveCfg = Release|Any CPU
 		{8F349E99-EB87-439B-8670-0C9FB37663AA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0FC91722-BDFE-44AE-96F8-06C62B781591} = {FA7A717C-FC67-4CC2-9B5C-EED075C25D0E}
 		{5512BE99-7FF7-47AA-8B43-D4CD4FDB670A} = {FA7A717C-FC67-4CC2-9B5C-EED075C25D0E}
 		{C8A5A97B-C4E1-464D-A8CE-F9894FA38C68} = {5512BE99-7FF7-47AA-8B43-D4CD4FDB670A}
 		{B4D3EA0D-96C9-459B-BF02-B96F63542E47} = {FA7A717C-FC67-4CC2-9B5C-EED075C25D0E}
 		{8F349E99-EB87-439B-8670-0C9FB37663AA} = {B4D3EA0D-96C9-459B-BF02-B96F63542E47}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4CC67F4-5D7B-41DE-B6F9-E0EE16892F53}
 	EndGlobalSection
 EndGlobal
